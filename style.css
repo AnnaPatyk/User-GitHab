@@ -1,0 +1,92 @@
+body {
+   width: 100vw;
+   height: 100vh;
+   background-image: url(iso-republic-the-water-foams-in-the-sun-free-stock-photo.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: grid;
+   place-items: center;
+}
+.box {
+   max-width: 80vw;
+   background-color: #183b59da;
+   padding: 2rem;
+   border-radius: 0.5rem;
+}
+.user {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-areas:
+      "i gitHub"
+      "i blog"
+      "i city"
+      "name email"
+      "login followers";
+}
+.name {
+   grid-area: name;
+}
+.login {
+   grid-area: login;
+}
+.gitHub {
+   grid-area: gitHub;
+}
+.blog {
+   grid-area: blog;
+}
+.city {
+   grid-area: city;
+}
+.email {
+   grid-area: email;
+}
+.followers {
+   grid-area: followers;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+img {
+   grid-area: i;
+   width: 12.5rem;
+   height: 12.5rem;
+   overflow: hidden;
+   -o-object-fit: cover;
+   object-fit: cover;
+   border-radius: 0.5rem;
+}
+.user-info {
+   padding: 1rem;
+}
+p {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   font-size: 20px;
+   font-weight: 600;
+   color: #0367a6;
+   text-stroke: 1px #a7cff2;
+   -webkit-text-stroke: 0.5px #a7cff2;
+   letter-spacing: 2px;
+}
+h1 {
+   font-size: 3rem;
+   color: #2f5973;
+   text-shadow: 2px 2px 2px #a7cff2;
+}
+input,
+button {
+   padding: 6px 10px;
+   background-color: #2f5973b4;
+   border: 1px solid #a7cff2;
+   box-shadow: 0px 0px 8px #a7cff2;
+   color: #a7cff2;
+   font-size: 1.125rem;
+}
+input {
+   margin-right: 1rem;
+}
+span,
+a {
+   color: #a7cff2;
+   font-size: 18px;
+}
